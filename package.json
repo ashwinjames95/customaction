@@ -1,0 +1,9 @@
+{
+  "name": "print-strings-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to print two strings",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.0.0"
+  }
+}
