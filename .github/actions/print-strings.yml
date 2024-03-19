@@ -1,0 +1,14 @@
+name: Print Strings
+description: Prints two strings provided as inputs
+
+inputs:
+  string1:
+    description: 'First string'
+    required: true
+  string2:
+    description: 'Second string'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
