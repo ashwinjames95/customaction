@@ -17,6 +17,6 @@ on:
        steps:
         - name: Print Strings
           uses: ./.github/actions/print-strings
-            with:
+          with:
              string1: ${{inputs.value1}}
              string2: ${{inputs.value2}}  
