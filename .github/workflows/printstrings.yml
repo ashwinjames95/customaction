@@ -14,8 +14,8 @@ on:
     jobs:
      print-strings:
        runs-on: ubuntu-latest
-         steps:
-          - name: Print Strings
+       steps:
+        - name: Print Strings
           uses: ./.github/actions/print-strings
             with:
              string1: ${{inputs.value1}}
