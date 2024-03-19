@@ -11,7 +11,7 @@ on:
           description: 'Second value'
           type: string
           required: true 
-    jobs:
+jobs:
      print-strings:
        runs-on: ubuntu-latest
        steps:
