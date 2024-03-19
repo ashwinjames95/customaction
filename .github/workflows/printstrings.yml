@@ -1,0 +1,22 @@
+name: Input Values using action
+
+on:
+  workflow_dispatch:
+    inputs:
+        value1:
+          description: 'First value'
+          type: string
+          required: true
+        value2:
+          description: 'Second value'
+          type: string
+          required: true 
+    jobs:
+     print-strings:
+       runs-on: ubuntu-latest
+         steps:
+          - name: Print Strings
+          uses: ./.github/actions/print-strings
+            with:
+             string1: ${{inputs.value1}}
+             string2: ${{inputs.value2}}  
