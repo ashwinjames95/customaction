@@ -1,5 +1,4 @@
 name: Input Values using action
-
 on:
   workflow_dispatch:
     inputs:
@@ -12,9 +11,9 @@ on:
           type: string
           required: true 
 jobs:
-     print-strings:
-       runs-on: ubuntu-latest
-       steps:
+   print-strings:
+      runs-on: ubuntu-latest
+      steps:
         - name: Print Strings
           uses: ./.github/actions/print-strings
           with:
